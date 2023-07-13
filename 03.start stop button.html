@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Stop</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+    <button id="button">Start Machine</button>
+    <p id="para">Start the Machine</p>
+
+    <script>
+        let button = document.getElementById("button");
+        let para = document.getElementById("para");
+
+        button.addEventListener("click", startstopmachine);
+
+        function startstopmachine(){
+
+            if(button.textContent == 'Start Machine'){
+                button.textContent = 'Stop Machine';
+                para.textContent = 'Machine has started'; 
+            }
+            else{
+                button.textContent = 'Start Machine';
+                para.textContent = 'Machine is stoped'; 
+            }
+        }
+
+    </script>
+</body>
+</html>
